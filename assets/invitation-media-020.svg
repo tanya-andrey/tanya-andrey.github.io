@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="1600" viewBox="0 0 1000 1600">
+<defs>
+ <linearGradient id="base" x2="1" y2="1"><stop stop-color="#e4dcd0"/><stop offset=".45" stop-color="#faf6ed"/><stop offset="1" stop-color="#d7cbbb"/></linearGradient>
+ <linearGradient id="fold"><stop stop-color="#c8bbaa"/><stop offset=".22" stop-color="#f8f2e7"/><stop offset=".5" stop-color="#eee5d8"/><stop offset=".8" stop-color="#fffaf1"/><stop offset="1" stop-color="#cfc1ae"/></linearGradient>
+ <radialGradient id="petal" cx=".65" cy=".25" r=".85"><stop stop-color="#fffdf7"/><stop offset=".6" stop-color="#f2eadf"/><stop offset="1" stop-color="#cbbda9"/></radialGradient>
+ <filter id="soft"><feGaussianBlur stdDeviation="13"/></filter>
+ <filter id="shadow"><feDropShadow dx="-9" dy="14" stdDeviation="17" flood-color="#8d7c65" flood-opacity=".17"/></filter>
+ <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".65" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="linear" slope=".035"/></feComponentTransfer><feBlend in="SourceGraphic" mode="multiply"/></filter>
+</defs>
+<g filter="url(#grain)"><path fill="url(#base)" d="M0 0h1000v1600H0z"/>
+<g opacity=".7"><path fill="url(#fold)" d="M-240-100C850 170 180 730 1050 950L1150 1600C220 1040 460 490-240 500Z"/><path fill="url(#fold)" d="M1040-100C280 350 1080 740 210 1700H-100C820 720 290 610 800-100Z"/><path fill="#fffaf0" opacity=".65" filter="url(#soft)" d="M940-100C270 320 950 730 100 1600h95C1060 710 380 330 1030-100Z"/></g>
+<g filter="url(#shadow)" transform="translate(50 110) rotate(-25)"><path fill="url(#petal)" d="M30 155C-180 70-135-175 60-160 230-150 195 90 30 155Z"/><path fill="url(#petal)" d="M35 155C-25-80 90-210 220-130 355-45 225 120 35 155Z"/><path fill="url(#petal)" d="M35 155C190-60 375-30 370 90 360 230 120 240 35 155Z"/><path fill="url(#petal)" d="M35 155C180 140 250 310 115 345-15 380-55 240 35 155Z"/><path fill="url(#petal)" d="M35 155C-25 300-230 260-215 145-190 15-45 60 35 155Z"/><path fill="url(#petal)" d="M35 155C-55 20 95-50 145 30 195 105 70 175 35 155Z"/></g>
+<g filter="url(#shadow)" transform="translate(930 1430) rotate(155) scale(1.35)"><path fill="url(#petal)" d="M0 100C-200 50-170-150-40-145 105-140 140 0 0 100Z"/><path fill="url(#petal)" d="M0 100C-50-75 135-220 220-100 295 0 115 125 0 100Z"/><path fill="url(#petal)" d="M0 100C120-10 330 70 235 185 150 280 10 195 0 100Z"/><path fill="url(#petal)" d="M0 100C70 185-10 310-105 220-185 145-70 60 0 100Z"/><path fill="url(#petal)" d="M0 100C-90-10 55-60 90 5 125 80 20 125 0 100Z"/></g>
+</g></svg>

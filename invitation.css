@@ -1,0 +1,127 @@
+/* Geometry, breakpoints, typography, frames and scaling are owned by the original Tilda styles. */
+:root{color-scheme:only light}
+body{margin:0;background:#eee7df}
+#allrecords{position:relative;z-index:1}
+#wedding-background{position:fixed;inset:0;z-index:0;overflow:hidden;pointer-events:none}
+#wedding-background video{display:block;width:120%;height:120%;object-fit:cover}
+.custom-graphic svg{display:block;width:100%;height:100%}
+.couple-photo{overflow:hidden}
+.couple-photo img{display:block;width:100%;height:100%;object-fit:cover;object-position:52% 32%}
+.location-map{overflow:hidden;background:#eee7df}
+.location-map iframe{display:block;width:100%;height:100%;border:0}
+#rec1126086541 .t-cover__carrier{background-position:54% 42%!important;background-size:cover!important}
+#rec1126086541 .t-cover,#rec1126086541 .t-cover__carrier,#rec1126086541 .t-cover__filter,#rec1126086541 .t-cover__wrapper{height:100svh!important;min-height:500px}
+.closing-card{max-width:639px;margin:0 auto;padding:65px 24px 75px;box-sizing:border-box;text-align:center;color:#514639}
+.closing-card h2{font:400 28px/1.5 'Times New Roman',serif;margin:0}
+.closing-card p{font:24px/1.5 'Times New Roman',serif;margin:20px 0}
+.closing-card .signature{font-size:42px;font-style:italic;margin:30px 0 12px}
+.closing-card .closing-line{font:16px/1.5 Montserrat,Arial,sans-serif;letter-spacing:.08em;margin-top:30px}
+.wedding-cover{position:fixed;inset:0;width:100%;height:100%;max-width:none;max-height:none;margin:0;padding:0;border:0;background:transparent;transition:opacity 1.2s,transform 1.2s}
+.wedding-cover::backdrop{background:transparent}
+.open-invitation{display:block;width:100%;height:100%;padding:0;margin:0;background:transparent;border:0;cursor:pointer}
+.open-invitation img{display:block;width:min(100%,620px);height:100%;margin:0 auto;object-fit:contain}
+body:has(.wedding-cover[open]){overflow:hidden!important}
+body:has(.wedding-cover[open]) #allrecords{visibility:hidden}
+.wedding-cover.leaving{opacity:0;transform:scale(1.035)}
+.open-invitation:focus-visible{outline:2px solid #806b52;outline-offset:-8px}
+.visually-hidden{position:absolute;width:1px;height:1px;padding:0;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+@media(max-width:1199px){.closing-card{max-width:640px}.closing-card h2{font-size:24px}.closing-card .signature{font-size:36px}}
+@media(prefers-reduced-motion:reduce){.wedding-cover{transition:none}*,*::before,*::after{animation:none!important}}
+/* Corrections after checking the rendered mobile and desktop pages. */
+.personal-lettering text{font-family:'Cormorant Garamond','Times New Roman',serif}
+.personal-lettering .handwritten{font-family:'Great Vibes','Cormorant Garamond',cursive;font-style:normal}
+.personal-lettering .monogram-letter{font-family:'Great Vibes','Cormorant Garamond',cursive;font-size:84px;font-style:italic;fill:#514639}
+#rec1126047001 [data-elem-type="text"] .tn-atom{text-align:center}
+.closing-card h2,.closing-card p{font-family:'Cormorant Garamond','Times New Roman',serif}
+.closing-card .signature{font-family:'Great Vibes','Cormorant Garamond',cursive;font-style:normal;font-size:48px}
+.final-photo-section{max-width:640px;margin:0 auto;padding:20px;box-sizing:border-box}
+.final-photo-frame{position:relative;aspect-ratio:320/650;overflow:hidden;background:#292725}
+.final-photo-frame>img{display:block;width:100%;height:100%;object-fit:cover;object-position:54% 42%;position:absolute;inset:0}
+.final-countdown{position:absolute;bottom:0;left:0;right:0;padding:70px 15px 30px;box-sizing:border-box;text-align:center;background:linear-gradient(transparent,rgba(0,0,0,.55));color:#f2efea}
+.final-countdown>p{font:400 18px/1.5 Montserrat,Arial,sans-serif;margin:0 0 24px}
+.final-countdown .t415__timer{display:flex;justify-content:center;width:100%;margin:0;padding:0}
+.final-countdown .t415__col{flex:1;min-width:0;width:auto;padding:0 8px;box-sizing:border-box}
+.final-countdown .t415__number{font:400 38px/1.2 Montserrat,Arial,sans-serif}
+.final-countdown .t415__text{font:400 13px/1.4 Montserrat,Arial,sans-serif;margin-top:7px}
+@media(max-width:639px){.final-photo-section{padding:10px}.final-countdown{padding:55px 12px 24px}.final-countdown>p{font-size:16px;margin-bottom:18px}.final-countdown .t415__number{font-size:30px}.final-countdown .t415__text{font-size:12px}.closing-card .signature{font-size:42px}}
+@media(max-width:1199px){
+  #rec1126047001 .t396__artboard,#rec1126047001 .t396__carrier,#rec1126047001 .t396__filter{height:570px}
+  #rec1126047001 .tn-elem[data-elem-id="1750843552508"],#rec1126047001 .tn-elem[data-elem-id="1750843552512"]{height:530px}
+}
+/* Text and photos participate in normal flow, including mobile text zoom. */
+.invitation-panel{position:relative;box-sizing:border-box;width:calc(100% - 20px);max-width:640px;margin:20px auto;padding:30px 26px 40px;border:2px solid #fffaf5;background:rgba(245,243,238,.25);backdrop-filter:blur(4px);text-align:center;color:#171511}
+.invitation-panel .couple-image{display:block;position:static;width:100%;height:auto;max-width:100%;aspect-ratio:1184/864;object-fit:contain;margin:0 0 28px}
+.panel-heading{margin:0 auto 25px;width:100%;max-width:483px}
+.panel-art{display:block;width:100%;height:auto;aspect-ratio:483/77;object-fit:contain;margin:0 auto}
+.panel-art svg{display:block;width:100%;height:100%}
+.panel-script{margin-top:-12px}
+.panel-copy,.date-copy{font:400 20px/1.65 Montserrat,Arial,sans-serif;overflow-wrap:break-word}
+.panel-copy p,.date-copy p{margin:0 0 20px}
+.panel-copy p:last-child,.date-copy p:last-child{margin-bottom:0}
+.date-copy{margin-top:45px}
+.date-copy>.section-title{margin-bottom:20px}
+.panel-map{margin-top:28px;width:100%;aspect-ratio:1/1;overflow:hidden;background:#eee7df}
+.panel-map iframe{display:block;width:100%;height:100%;border:0}
+.monogram-separator{width:130px;margin:32px auto}
+.monogram-separator .panel-art{aspect-ratio:250/110}
+.wine-panel,.dress-panel{padding-top:35px;padding-bottom:45px}
+.final-photo-section{max-width:none;padding:30px;width:100%}
+.final-photo-frame{aspect-ratio:16/10;width:100%}
+.final-photo-frame>img{object-position:54% 12%}
+.final-countdown .t415__timer{max-width:600px;margin:0 auto}
+@media(max-width:767px){
+ .invitation-panel{padding:22px 20px 32px;margin-top:16px;margin-bottom:16px}
+ .panel-copy,.date-copy{font-size:18px;line-height:1.65}
+ .panel-script{margin-top:-9px}
+ .panel-map{aspect-ratio:1/1}
+ .monogram-separator{width:100px;margin:25px auto}
+ .final-photo-section{padding:10px}
+ .final-photo-frame{aspect-ratio:320/650}
+ .final-photo-frame>img{object-position:54% 42%}
+ .wine-panel,.dress-panel{padding-top:28px;padding-bottom:35px}
+}
+/* The cover is live text over the same video as the invitation. */
+html.invitation-pending{overflow:hidden}
+html.invitation-pending #allrecords{visibility:hidden;opacity:0;pointer-events:none}
+.wedding-cover{color:#514639;transition:opacity .8s,transform .8s}
+.cover-content{box-sizing:border-box;min-height:100%;min-height:100svh;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:50px 24px;text-align:center}
+.cover-greeting{margin-bottom:45px}
+.cover-title{font:400 clamp(30px,7.8vw,48px)/1.1 'Cormorant Garamond','Times New Roman',serif;text-transform:uppercase;margin:0;letter-spacing:.025em}
+.cover-calligraphy{font:400 clamp(43px,11vw,70px)/1.15 'Great Vibes',cursive;margin:-4px 0 0}
+.open-invitation{display:grid;place-items:center;flex:none;width:76px;height:76px;padding:12px;border-radius:50%;border:1px solid #81694b55;background:#fff9ee40;color:#80674e;box-sizing:border-box;transition:background .25s,transform .25s}
+.open-invitation svg{display:block;width:46px;height:46px;fill:#ad8b6c22;stroke:currentColor;stroke-width:1.4;animation:heart-breathe 2.8s ease-in-out infinite}
+.open-invitation:hover{background:#fff9ee88}
+.open-invitation:active{transform:scale(.95)}
+.open-invitation:focus-visible{outline:2px solid #806b52;outline-offset:5px}
+.cover-hint{font:400 16px/1.7 Montserrat,Arial,sans-serif;margin:22px 0 0;letter-spacing:.025em}
+#wedding-background{background:#eee7df url('assets/invitation-media-003.jpg') center/cover}
+@keyframes heart-breathe{0%,100%{transform:scale(1)}50%{transform:scale(1.07)}}
+@media(prefers-reduced-motion:reduce){.wedding-cover,.open-invitation{transition:none;animation:none}}
+/* Reveal the invitation after the cover has finished fading out. */
+#allrecords{opacity:1;transition:opacity 1s ease-in-out}
+@media(prefers-reduced-motion:reduce){#allrecords{transition:none}}
+html.invitation-pending #allrecords{transition:none}
+
+.section-title{font:400 clamp(30px,7.5vw,46px)/1.15 "Cormorant Garamond","Times New Roman",serif;text-transform:uppercase;color:#514639;margin:0}
+.intro-script{font:400 clamp(44px,11vw,64px)/1.3 "Great Vibes",cursive;color:#514639;margin:8px 0 0}
+
+.invitation-panel.date-section{margin:40px auto}
+.reveal-ready{opacity:0;transform:translateY(28px);transition:opacity 1s ease,transform 1s ease}
+.reveal-ready.is-visible{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal-ready{opacity:1;transform:none;transition:none}}
+
+.section-title + .panel-script{margin-top:8px}
+
+.closing-card .signature{font-family:"Great Vibes",cursive;font-size:48px;line-height:1.5}
+@media(max-width:639px){.closing-card .signature{font-size:42px}}
+
+.accent-copy{font:400 40px/1.25 "Great Vibes","Cormorant Garamond",serif;color:#514639}
+.panel-subtitle{margin:8px 0 0}
+.personal-lettering .monogram-letter{font-style:normal}
+@media(max-width:767px){.accent-copy{font-size:32px}}
+
+/* Keep Safari's paused-video overlay behind the fabric poster. */
+#wedding-background video{opacity:0}
+#wedding-background video.is-playing{opacity:1}
+#wedding-background video::-webkit-media-controls,
+#wedding-background video::-webkit-media-controls-start-playback-button{display:none!important}

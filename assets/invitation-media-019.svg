@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1400" fill="none">
+  <defs>
+    <linearGradient id="silk" x1="0" y1="0" x2="1" y2=".2">
+      <stop stop-color="#857157" stop-opacity="0"/>
+      <stop offset=".28" stop-color="#a58d6e" stop-opacity=".16"/>
+      <stop offset=".44" stop-color="#fffdf6" stop-opacity=".82"/>
+      <stop offset=".52" stop-color="#ffffff" stop-opacity=".95"/>
+      <stop offset=".65" stop-color="#d2c0a5" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#fff9e8" stop-opacity="0"/>
+    </linearGradient>
+    <filter id="blur" x="-30%" y="-20%" width="160%" height="140%">
+      <feGaussianBlur stdDeviation="12"/>
+    </filter>
+  </defs>
+  <g filter="url(#blur)" fill="url(#silk)">
+    <path d="M-200-200C620 70 15 460 590 830S650 1230 1000 1600H720C160 1170 540 1060 260 790S290 260-200 60Z"/>
+    <path d="M450-200C200 190 770 390 420 820S-90 1180 40 1600H-180C-190 1020 220 940 240 670S110 180 250-200Z" opacity=".65"/>
+    <path d="M1040-100C420 260 1090 550 680 970S490 1300 650 1600H900C680 1170 1000 1110 990 820S720 350 1200 80Z" opacity=".8"/>
+  </g>
+</svg>
